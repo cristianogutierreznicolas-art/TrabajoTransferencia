@@ -1,0 +1,184 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+strong {
+  font-weight: 700;
+}
+body {
+  font-family:'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+.encabezado {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #FEFEFE;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+  
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav__list a:hover {
+  color: #0070f3; 
+}
+
+
+.presentacion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.presentacion h1 {
+  font-size: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.presentacion strong {
+  color: #0070f3;
+}
+
+.presentacion p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 1rem 3rem; 
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.sobre p,
+.contacto p {
+  font-size: 20px;
+  color: #555;
+}
+
+.certificaciones h2 {
+  color: #004080;
+  font-weight: 600;
+}
+
+.carousel {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-dark {
+  transition: all 0.3s ease; 
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+.estudio-card {
+  transition: all 0.4s ease;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  
+}
+.estudio-card.carrera{
+  background: linear-gradient(100deg, #004080, #0070f3);
+}
+.estudio-card.ingles{
+  background: linear-gradient(100deg, #0070f3, #004080);
+}
+.estudio-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.estudio-card .card-title {
+  color: #fff; 
+  font-weight: 600;
+}
+
+.estudio-card .card-text {
+  color: #fff;
+}
+footer{
+  background-color: #555;
+  
+}

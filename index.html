@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+  <title>Nicolas Cristiano • Estudiante</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="nav">
+      <div class="logo">Nicolas Cristiano</div>
+      <ul class="nav__list">
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#estudios">Estudios</a>  </li>
+        <li><a href="#certificaciones">Certificados</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="presentacion">
+      <h1>Hola, soy <strong>Nicolas Cristiano</strong></h1>
+      <p>Estudiante de ingenieria • Sexto semestre • Bogotá D.C</p>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2><strong>Sobre mí</strong></h2>
+      <p>Estudiante de sexto semestre de Ingeniería de Sistemas, con gran interés en adquirir experiencia práctica en el área laboral. Busco una oportunidad que me permita iniciar mi trayectoria profesional, aportar y seguir desarrollándome de forma eficaz</p>
+    </section>
+
+  <section id="estudios" class="estudios py-5">
+    <div class="container text-center">
+      <h2 class="mb-4"><strong>Estudios</strong></h2>
+      <div class="row justify-content-center">
+          <div class="col-md-5 col-lg-4 mb-4">
+            <div class="card estudio-card carrera shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Ingeniería de Sistemas</h5>
+                <p class="card-text">Universidad Compensar<br>(2023 - Actualidad)</p>
+              </div>
+            </div>
+          </div>
+
+     
+          <div class="col-md-5 col-lg-4 mb-4">
+            <div class="card estudio-card ingles shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Inglés B1</h5>
+                <p class="card-text">Instituto American School Way<br>(2024 - Actualidad)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+    <section id="certificaciones" class="certificaciones container my-5">
+  <h2 class="text-center mb-4">Certificaciones</h2>
+
+  <div id="certificacionesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="card mx-auto" style="max-width: 400px;">
+          <img src="/imagenes/javafundamentals.jpg" class="card-img-top" alt="Certificado 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Java Fundamentals</h5>
+            <p class="card-text">Oracle Academy (2023)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card mx-auto" style="max-width: 400px; ">
+          <img src="/imagenes/62a86f1f14a38cce0c371c13.png" class="card-img-top" alt="Certificado 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Java Foundations</h5>
+            <p class="card-text">Oracle Academy (2024)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card mx-auto" style="max-width: 400px;">
+          <img src="/imagenes/python.png" class="card-img-top" alt="Certificado 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Programming Essentials in Python</h5>
+            <p class="card-text">Cisco (2023)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card mx-auto" style="max-width: 400px;">
+          <img src="/imagenes/oracleacademy.png" class="card-img-top" alt="Certificado 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Database Design</h5>
+            <p class="card-text">Oracle Academy (2023)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#certificacionesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#certificacionesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+  <section id="contacto" class="contacto text-center py-5">
+    <h2>Contacto</h2>
+    <p>¿Necesitas contactarme? <a href="mailto:ncristiano@ucompensar.edu.co">Envíame un correo</a>.</p>      
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Nicolas Cristiano. </p>
+    <a href="https://github.com/cristianogutierreznicolas-art" target="_blank" class="btn btn-dark mt-3">
+      <i class="bi bi-github me-2"></i> Mi perfil de GitHub
+    </a>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+ 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 }); 
+
+  
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+  
+
+</body>
+</html>
